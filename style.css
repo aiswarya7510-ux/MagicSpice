@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    
+   
+
+
+}
+body{
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #2f0505;
+    --sec-color: #85311b;
+    --text-color: #c1853b;
+    --text-sec-color: bisque;
+    --font-family: "Nanum Gothic Coding", monospace;
+
+}
+
+/* navbar */
+ #header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+
+} 
+
+.navbar {
+    background-color: var(--sec-color);
+    box-shadow: 0px 5px 20px black;
+
+}
+
+.nav-link {
+    transition: all 0.5s;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    transform: translateY(-3px);
+}
+
+/* banner */
+
+#banner {
+    background-color: var(--primary-color);
+    padding: 50px;
+}
+
+.banner-img,
+.banner-txt {
+    padding: 50px 20px;
+    color: var(--text-sec-color);
+    height: 350px;
+}
+
+.banner-txt p {
+    color: var(--text-color);
+}
+
+.carousel-indicators button.carbtn {
+    background-color: var(--sec-color);
+
+}
+
+@media(max-width:460px) {
+    .banner-txt {
+        text-align: center;
+    }
+    .banner-img,
+    .banner-txt {
+        padding: 20px;
+       
+    }
+
+}
+
+@media(max-width:768px) {
+    .banner-txt {
+        text-align: center;
+    }
+    .banner-img,
+    .banner-txt {
+        padding: 40px;
+    }
+
+}
+
+/* about */
+#about {
+    background-color: var(--sec-color);
+    color: var(--text-sec-color);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.about-txt,
+.about-img {
+    padding: 50px;
+    text-align: justify;
+}
+
+.about-txt p {
+    display: inline;
+}
+
+.read {
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* menu */
+#menu {
+    color: var(--sec-color);
+    background-color: var(--text-sec-color);
+    padding: 50px;
+    
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.item {
+
+    box-shadow: 5px 10px 5px gray;
+    text-align: center;
+    padding: 5px 5px;
+    width: 200px;
+}
+
+
+ 
+
+
+
+/* testimonials */
+#testimonials {
+    padding: 20px;
+    background-color: var(--sec-color);
+    color: var(--text-sec-color);
+
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide img {
+    border-radius: 50%;
+
+}
+
+.swiper-slide .h6 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.swiper .btns {
+    width: 25px;
+    height: 25px;
+    margin: -10px;
+    margin-top: -60px;
+    border-radius: 50%;
+    color: var(--text-sec-color);
+    font-weight: bold;
+
+}
+
+/* gallery */
+
+#gallery {
+    color: var(--sec-color);
+    background-color: var(--text-sec-color);
+    padding: 20px;
+
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+
+    box-shadow: 5px 5px 5px rgb(15, 14, 14);
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    /* padding: 15px 5px; */
+    min-width: 100px;
+    border-radius: 5%;
+
+
+
+}
+
+.gallery-item img {
+    cursor: zoom-in;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.4);
+}
+
+/* Booking */
+#Booking {
+    /* padding: 20px 0px; */
+    color: var(--text-color);
+    background-color: var(--sec-color);
+    padding: 20px;
+   
+}
+
+.book-table form {
+    padding: 10px 100px;
+
+
+}
+
+.book-table button {
+    color: var(--sec-color);
+}
+
+button.book {
+    background-color: var(--text-color);
+
+}
+
+#footer {
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 50px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 5px;
+
+}
+
+#footer a:hover {
+    color: var(--text-sec-color);
+}
+
+#footer img {
+    margin: 10px;
+  
+}
+#footer p{
+    display: inline;
+}
+@media(max-width:460px){
+    
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    z-index: 99;
+
+}
